@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<html lang="en">
+  <head>
+    <title>J-Bot</title>
+
+
+    <meta charset="utf-8" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href= "{{ url_for('static',filename= 'css/style.css' ) }}">
+   
+    <script src="{{ url_for('static',filename='script/script.js') }}"></script>
+  </head>
+
+
+  <body>
+    <nav>
+    <div class="topnav">
+
+
+      <div class="logo">
+        <a href="/">J-Bot</a>
+    </div>
+
+
+      <div class="nav">
+        <a href="chats">Chats</a>
+
+
+        <a href="settings">Settings</a>
+
+
+        <a href="about">About</a>
+
+
+        <a href="profile">Profile</a>
+      </div>
+    </div>
+    <nav>
+
+  {%block content%}
+
+  {%endblock%}
+  </body>
+</html>
